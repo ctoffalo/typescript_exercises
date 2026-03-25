@@ -1,11 +1,12 @@
-version: "3.8"
+# version: "3.8"
 services:
   app:
-    image: node:20-bullseye-slim
+    build: .
     working_dir: /app
     volumes:
       - .:/app
-    command: ["npm", "run", "dev"]
+      - /app/node_modules
+    command: ["bash"]
     stdin_open: true
     tty: true
     environment:

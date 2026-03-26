@@ -5,3 +5,17 @@
 // - role: string
 //
 // Then create a function getAdmin() that returns an object of that type.
+
+interface Admin {
+    name: string,
+    role: string
+}
+
+function getAdmin(): Admin {
+    return {
+      name: "Cristian",
+      role: "admin"
+    }
+}
+
+console.log(getAdmin());

@@ -5,11 +5,21 @@
   "scripts": {
     "exercise": "ts-node",
     "exercise:0": "ts-node app/exercise_0.ts",
+    "format": "prettier . --write",
+    "format:check": "prettier . --check",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "typescript": "^5.4.5",
-    "ts-node": "^10.9.2"
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/parser": "^7.18.0",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^10.1.8",
+    "globals": "^15.15.0",
+    "prettier": "^3.8.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
   },
   "author": "",
   "license": "ISC",
